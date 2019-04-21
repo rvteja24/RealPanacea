@@ -1,0 +1,9 @@
+.text-color {
+    color:#8BD8BD;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
