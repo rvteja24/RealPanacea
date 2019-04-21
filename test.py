@@ -1,1 +1,1 @@
-"Real Panacea"
+"Real Panacea Team"
