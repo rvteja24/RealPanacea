@@ -1,9 +1,9 @@
 <div class="container">
-  <div class="quote">
+  <div class="quote" style="margin-top: 20px;">
     <a class="content">"Explain about realPanancea"</a>
   </div>
   <ngu-carousel #myCarousel [inputs]="carouselConfig" [dataSource]="carouselTiles">
-    <div *nguCarouselDef="let item;" class="item">
+    <div *nguCarouselDef="let item;" class="item itemView">
       <!-- <div class="tile" [style.background]="'url(' + item.name + ')'" style="min-height: 200px">        
       </div> -->
       <h1>{{item.name}}</h1>
