@@ -20,12 +20,19 @@
     }
 }
 
-:host /deep/ #navbar6 ul li a.active {
+:host /deep/ #navbar6 ul li a:focus {
     color: #243665;
     background-color: #8BD8BD;
 }
-
-
-:host /deep/ #navbar6 ul li a{
+:host /deep/ #navbar6 ul li a:hover {
+    color: #243665;
+    background-color: #8BD8BD;
+}
+:host /deep/ #navbar6 ul li a:active {
     color: #8BD8BD;
+    background-color: #243665;
+}
+:host /deep/ #navbar6 ul li a {
+    color: #8BD8BD;
+    background-color: #243665;
 }
