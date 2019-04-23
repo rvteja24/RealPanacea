@@ -1,0 +1,38 @@
+.navbar-brand{ 
+    background: url('../../../assets/images/rp-logo.png') left / contain no-repeat;
+    width: 50px;
+    color: darkblue;
+    float: left;
+    filter: brightness(79%) sepia(50) saturate(50) hue-rotate(95deg);
+  }
+.navbar-inverse .navbar-toggle .icon-bar{
+    background-color:#8BD8BD;
+    
+}
+.navbar-inverse .navbar-toggle{
+    border-color:#8BD8BD;
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        margin: 0px;
+        width: 100%; 
+    }
+}
+
+:host /deep/ #navbar6 ul li a:focus {
+    color: #243665;
+    background-color: #8BD8BD;
+}
+:host /deep/ #navbar6 ul li a:hover {
+    color: #243665;
+    background-color: #8BD8BD;
+}
+:host /deep/ #navbar6 ul li a:active {
+    color: #8BD8BD;
+    background-color: #243665;
+}
+:host /deep/ #navbar6 ul li a {
+    color: #8BD8BD;
+    background-color: #243665;
+}

@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="quote" style="margin-top: 20px;">
+    <a class="content">"Explain about realPanancea"</a>
+  </div>
+  <ngu-carousel #myCarousel [inputs]="carouselConfig" [dataSource]="carouselTiles">
+    <div *nguCarouselDef="let item;" class="item itemView">
+      <!-- <div class="tile" [style.background]="'url(' + item.name + ')'" style="min-height: 200px">        
+      </div> -->
+      <h1>{{item.name}}</h1>
+    </div>
+    <button NguCarouselPrev class="leftRs">&lt;</button>
+    <button NguCarouselNext class="rightRs">&gt;</button>
+    <ul class="myPoint" NguCarouselPoint>
+      <li *ngFor="let j of myCarousel.pointNumbers; let j = index" [class.active]="j==myCarousel.activePoint" (click)="myCarousel.moveTo(j)"></li>
+      <!-- [style.background]="'url(' + carouselTileItems[j] + ')'" -->
+    </ul>
+  </ngu-carousel>
+</div>
