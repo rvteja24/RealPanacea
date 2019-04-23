@@ -1,0 +1,14 @@
+#my-app{
+    min-height: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color:#8BD8BD;
+}
+
+:host /deep/ .navbar-inverse {
+    background-color: #243665;
+}
+
+:host /deep/ .navbar-inverse .navbar-nav >.active>a {
+    background-color: #8BD8BD;
+}
