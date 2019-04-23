@@ -1,27 +1,30 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { HomeComponent } from './home/home.component';
+import { NguCarouselModule } from '@ngu/carousel';
+import { ContactService } from '../shared/contact.service';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { HomeComponent } from './home/home.component';
 import { ServicesOfferedComponent } from './services-offered/services-offered.component';
-import { NguCarouselModule } from '@ngu/carousel';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {ContactService} from '../shared/contact.service';
-import {BrowserModule} from '@angular/platform-browser';
-import {RouterModule} from '@angular/router';
+import { CommonSharedModule } from '../common-shared/common-shared.module';
+import { CoreRoutingModule } from './core-routing.module';
 
 @NgModule({
-  declarations: [HomeComponent, AboutComponent, ContactComponent, ServicesOfferedComponent],
+  declarations: [
+    HomeComponent,
+    AboutComponent,
+    ContactComponent,
+    ServicesOfferedComponent
+  ],
   imports: [
-    CommonModule,
     NguCarouselModule,
-    FormsModule,
-    ReactiveFormsModule,
-    RouterModule,
-    BrowserModule,
+    CommonSharedModule,
+    CoreRoutingModule
   ],
   exports: [
-    HomeComponent, AboutComponent, ContactComponent, ServicesOfferedComponent
+    // HomeComponent, 
+    // AboutComponent, 
+    // ContactComponent, 
+    // ServicesOfferedComponent
   ],
   providers: [ContactService]
 })
