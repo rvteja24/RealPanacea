@@ -1,17 +1,19 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { HeaderComponent } from './header/header.component';
+import { CommonSharedModule } from '../common-shared/common-shared.module';
 import { FooterComponent } from './footer/footer.component';
-import {BrowserModule} from '@angular/platform-browser';
-import {RouterModule} from '@angular/router';
-import {Http} from '@angular/http';
-import {HttpModule} from '@angular/http';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
-  declarations: [HeaderComponent, FooterComponent ],
-  imports: [
-    CommonModule, BrowserModule, RouterModule, HttpModule
+  declarations: [
+    HeaderComponent,
+    FooterComponent
   ],
-  exports: [HeaderComponent, FooterComponent],
+  imports: [
+    CommonSharedModule
+  ],
+  exports: [
+    HeaderComponent,
+    FooterComponent
+  ],
 })
 export class SharedModule { }
