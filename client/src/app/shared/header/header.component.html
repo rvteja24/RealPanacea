@@ -13,12 +13,27 @@
       </div>
       <div id="navbar6" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <li>
+            <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+          </li>
+          <li>
+            <a routerLink="/about-us" routerLinkActive="active">About Us</a>
+          </li>
+          <li>
+            <a routerLink="/services" routerLinkActive="active">Services</a>
+          </li>
+          <li>
+            <a routerLink="/contact-us" routerLinkActive="active">Contact Us</a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="glyphicon glyphicon-user"></span> Sign Up</a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="glyphicon glyphicon-log-in"></span> Login</a>
+          </li>
+
         </ul>
       </div>
     </div>
