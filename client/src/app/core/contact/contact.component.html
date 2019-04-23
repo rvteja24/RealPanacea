@@ -1,3 +1,38 @@
-<p>
-  contact works!
-</p>
+<div class="container">
+  <div *ngIf="!firstName; else forminfo">
+         <form [formGroup]="rForm" (ngSubmit)="addPost(rForm.value)">
+        
+            <div class="form-container">
+              <div class="row-columns">
+               <h1></h1>
+                <label>First Name
+                  
+                  <input type="text" placeholder="Enter your first name" formControlName="firstName" style="height : 30px;    width: -webkit-fill-available;">
+                </label>
+                <label>Last Name
+                  <input type="text" formControlName="lastName" placeholder="Enter your last name" style="height : 30px;    width: -webkit-fill-available;">
+                </label>
+                <label>Phone Number
+                  <input type="text" formControlName="phoneNumber" placeholder="Enter your phone number" style="height : 30px;    width: -webkit-fill-available;">
+                </label>
+                <label>email id
+                  <input type="text" formControlName="emailId" placeholder="enter your email id" style="height : 30px;    width: -webkit-fill-available;">
+                </label>
+                <label>Description (optional)
+                  <textarea  formControlName="description" placeholder="give us a brief discription." style="height : 100px;    width: -webkit-fill-available;"></textarea>
+                </label>                
+                <input type="submit" class="button expanded" value="Send Contact Details" [disabled]="!rForm.valid">
+                
+              </div>
+            </div>
+          </form>
+  </div>
+        
+      <ng-template #forminfo>
+         <div class="form-container">
+           <div class="row-columns">
+               <h1>We might not be as fast as sqroot of (e/m) but we will definitely get back to you under half an hour!!</h1>
+                <h1><a routerLink="/home"> continue browsing </a></h1>
+           </div>
+         </div>
+      </ng-template>
