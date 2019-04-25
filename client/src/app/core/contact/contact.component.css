@@ -1,8 +1,8 @@
 .form-container {
     display:block;
     width:296px;
-    padding:2em;
-    margin: 2em auto;
+    padding:1em 2em;
+    margin: 0 auto;
 }
 
 .alert {
@@ -37,6 +37,7 @@ h1 {
 }
 
 .row-columns input[type="text"],
+.row-columns input[type="email"],
 .row-columns textarea,
 .row-columns select 
 {
@@ -57,6 +58,7 @@ h1 {
     font: 95% Arial, Helvetica, sans-serif;
 }
 .row-columns input[type="text"]:focus,
+.row-columns input[type="email"]:focus,
 .row-columns textarea:focus,
 .row-columns select:focus
 {
